@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vieport" content="width=device-width,initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="box">
+            <div class="wave-one"></div>
+            <div class="wave-two"></div>
+            <div class="wave-three"></div>
+            <div id="weathercon"> 
+                <i class="fa-solid fa-sun" style="color:#eccc68"></i> </div>
+                <div class="info">
+                    <h2 class="location"><i class="fa-solid fa-street-view"></i>
+                    </i>jaipur,india</h2>
+                    <p id="date">mon | dec 19 | 11:38AM</p>
+                    <h1 class="temp">22°C</h1>
+                    <h3 class="temMin_Max">Min 10°C | Max 26°C</h3>
+                </div>
+               
+        </div>
+        <script>
+            const curdate= document.getAnimations("date");
+            let weathercon=document.getElementById("weathercon");
+            const temstatus="clouds";
+            let weekday=getElementById();
+            const getCurrentDay = () =>{
+                var weekDay =new Array(7);
+                weekDay[0] = "sunday";
+                weekDay[1] = "monday";
+                weekDay[2] = "tuesday";
+                weekDay[3] = "wednesday";
+                weekDay[4] = "thrusday";
+                weekDay[5] = "friday";
+                weekDay[6] = "saturday";
+                let currentTime =new Date();
+                console.log(weekday[currentTime.getDay()]);
+            };
+            getCurrentDay();
+        </script>
+    </body>
+    </html>

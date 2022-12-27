@@ -1,0 +1,25 @@
+const student=[];
+student{
+    firest_name:,
+    last_name: ,
+    email;
+}
+{"first_name":"ajaypal","last_name":"ahuja","email":"binod@gmail.com"},
+{"first_name":"chandrapal","last_name":"ahuja","email":"binod@gmail.com"},
+{"first_name":"chandrapal","last_name":"ahuja","email":"binod@gmail.com"},
+{"first_name":"chandrapal","last_name":"ahuja","email":"binod@gmail.com"},
+{"first_name":"chandrapal","last_name":"ahuja","email":"binod@gmail.com"},
+undefined,
+undefined,
+{"first_name":"nathulal","last_name":"ahuja","email":"binod@gmail.com"},
+{"first_name":"nathulal","last_name":"ahuja","email":"binod@gmail.com"},
+undefined,
+{"first_name":"nathulal","last_name":"ahuja","email":"nathu@gamil.com"},
+{"first_name":"nathulal","last_name":"ahuja","email":"nathu@gamil.com"},
+{"id":1,"first_name":"nathulal","last_name":"ahuja","email":"nathu@gamil.com"},
+{"id":1,"first_name":"monu","last_name":"ram","email":"ram@gamil.com"},
+{"id":1,"first_name":"monu","last_name":"ram","email":"ram@gamil.com"},
+{"id":2,"first_name":"monu","last_name":"ram","email":"ram@gamil.com"},
+{"id":3,"first_name":"monu","last_name":"ram","email":"ram@gamil.com"},
+{"id":1,"first_name":"nand","last_name":"kishor","email":"lishor@gamil.com"},
+{"id":2,"first_name":"nand","last_name":"kishor","email":"kishor@gamil.com"},

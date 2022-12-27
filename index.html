@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vieport" content="width=device-width,initial-scale=1.0">
+        <title>Javascript</title>
+    </head>
+    <style>
+        .container{
+            border : 2px solid blue;
+        margin: 3px 0 ;
+        background : cyan;
+        padding : 5px;
+        }
+        .bg-primary{
+            background-color: rgb(114, 9, 212);
+        }
+        .text-success{
+           color: rgb(255, 255, 255);
+        }
+    </style>
+    <body>
+        <h1>Welcome to the java <script></script></h1>
+        <div id="firstcontainer" class="container">
+            <button id="click" onclick="clicked()">Click Me</button>
+            <p>this is the paragraph and it is in white colour</p>
+        </div>
+        <div class="container">
+            <P>This is a paragraph</P> 
+        </div>
+    
+        <script>
+            console.log("hello world");
+            document.write("this is document ")
+            var number1=56;
+            var number2=36;
+            console.log(number1 + number2);
+            var str1="this is string \n";
+            var str2='this is second string';
+            console.log(str1,str2)
+            //function reverseString(str) {
+             //   return str;
+           // }
+            //reverseString("hello");
+            var marks={
+                ram :90,
+                shayam: 89,
+                mohan:78
+            }
+            console.log(marks);
+            var und;
+            console.log(und);
+            var arr=[23,34,45,56,7787]
+            console.log(arr[2])
+            var a=7;
+            var b=4;
+            console.log("the value of a+b is",a+b);
+            console.log("the value of a-b is",a-b);
+            console.log("the value of a*b is",a*b);
+            console.log("the value of a/b is",a/b);
+            console.log("the value of a%b is",a%b);
+            function avg(a,b){
+                return(a+b)/2;
+            }
+            c1=avg(8,4);
+            c2=avg(89,78);
+            console.log(c1 ,c2);
+            function age(a){
+                if (a>18){
+                    return (" drink water");
+                }
+                else
+                {
+                    return ("do not drink water");
+                }
+            }
+            b1=age(12);
+            b2=age(57); 
+           var arr=[12,23,436,5,7434,34];
+           //console.log(arr.max());
+           //console.log(arr.min());
+           // console.log(arr);
+            //for(var i=0;i<arr.length;i++){
+              //  console.log(arr[i]);
+            //}
+            arr.forEach(function(eliment){
+                console.log(eliment);
+            })
+            let j=0;
+            while(j<arr.length){
+               console.log(arr[j]);
+                j++;
+            }
+            let k=0;
+            do{
+                console.log(arr[k]);
+                k++;
+            }
+            while(k<arr.length);
+            let myarr=["fan","pen",34,null,true];
+            console.log(myarr.length);
+            myarr.pop();
+            console.log(myarr);
+            myarr.push(und);
+            console.log(myarr);
+            let d=[23,1,56487,35,5498,8,9,11,41,09]
+            myarr.sort();
+                console.log(myarr);
+                console.log(d);
+                console.log(d.slice(4,7));
+                d.sort();   
+                console.log(d);
+                console.log(d.slice(4,7));
+                let string ="how was your day ";
+                console.log(string.length);
+                console.log(string.indexOf("o"));
+                console.log(string.lastIndexOf("a"));
+                console.log(string.slice(7,16));
+                x=string.replace("your","his");
+                console.log(x);
+                y=string.repeat(2);
+                console.log(y);
+                //date 
+                mydate=new Date();
+                console.log(mydate);
+                console.log(mydate.getTime());
+                console.log(mydate.getFullYear());
+                console.log(mydate.getDay());
+                console.log(mydate.getMinutes());
+                console.log(mydate.getHours ());
+                let z=document.getElementById('click');
+                console.log(z);
+                let zclass = document.getElementsByClassName("container");
+                console.log(zclass);
+               // zclass[0].style.background="yellow";
+               zclass[0].classList.add("bg-primary")
+               zclass[0].classList.add("text-success")
+               zclass[0].classList.remove("text-success")
+               console.log(z.innerHTML);
+               console.log(z.innertext);
+               let tn = document.getElementsByTagName('div')
+               console.log(tn);
+              createdElement = document.createElement('p');
+               createdElement.innertext ="this is created para";
+               tn[0].appendChild(createdElement);
+               sel = document.querySelector('.container');
+               console.log(sel)
+               sel = document.querySelectorAll('.container');
+               console.log(sel)
+               function clicked(){
+                console.log('the button was clicked')
+               }
+               window.onload= function(){
+                console.log('the document was loaded')
+               }
+               firstcontainer.addEventListener('click',function(){
+                console.log("cilck huaa")
+               })
+              // firstcontainer.addEventListener('mouseover',function(){
+                //console.log("mouse on container")
+               //})
+               //firstcontainer.addEventListener('mouseout',function(){
+                //console.log("mouse out of container")
+               //})
+               //function summ(a,b){
+                //return a+b;
+              // }
+               summ=(a,b)=>{
+                return a+b;
+               }
+              // logkaro = ()=>{
+                //document.querySelectorAll('.container')[1].innerHTML ="<b> set interval fired</b>"
+                //console.log('I am your log')
+              // }
+               //setTimeout(logkaro,5000);
+              //clr= setInterval(logkaro,5000);
+               //clr = setTimeout(logkaro,5000);
+               let array=['ram',90-5,arr,'teacher','shyam']
+               console.log(array) 
+               function currentage(birthyear){
+                return 2022-birthyear;
+               }
+               ca=currentage(2000);
+               console.log(ca)
+               let $function ='amazing';
+               if($function=== 'amazing') alert('java script is fun');
+               let myfirstjob='programer';
+               let job1='programer';
+               console.log(myfirstjob,job1);
+               const country="INDIA";
+               const continent='Asia';
+               let population= '1393';
+               const isisland=false;
+              // isisland=true;
+               let language='Hindi';
+               console.log(typeof isisland);
+               console.log(typeof country);
+               console.log(typeof population);
+               console.log(typeof language);
+               console.log(isisland,country,population,language,continent);
+              console.log(population/2);
+              population++;
+              console.log(population);
+               console.log(population>6);
+               console.log(population<33);
+               const description1 =
+               country +
+               ' is in ' +
+               continent +
+               ', and its ' +
+               population +
+               ' million people speak ' +
+               language;
+               console.log(description1);
+               var job='programmer';
+               job='teacher';
+               console.log(job);
+               console.log(2**3);
+               if(population>33){
+                console.log(country +"'s population is above average");
+               }
+               else{
+                console.log( country+"'s population is 22 million below average")
+               }
+               console.log('9' - '5');
+               console.log('19' - '13' + '17');
+               console.log('19' - '13' + 17);
+               console.log('123' < 57);
+               console.log(5 + 6 + '4' + 9 - 4 - 2);
+               //const numNeighbours= prompt('How many neighbour countries does your country have?');
+              // const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+               //if(numNeighbours===1){
+                //console.log("only one border");
+               //}
+               //else if(numNeighbours>1){
+                //console.log("more than 1 border");
+               //}
+               //else{
+                //console.log("no border");
+               //}
+               //if (language === 'Hindi' && population < 1400 && !isIsland)
+               //{
+               // console.log(`You should live in ${country} :)`);
+                //} else {
+                   // console.log(`${country} does not meet your criteria :(`);                   
+                  //  } 
+                  console.log('I am '+ 25 +' year old')
+                  const day =prompt('Enter the day');
+                  switch(day){
+                  case 'monday': 
+                  console.log("the day is monday");
+                  break;
+                  case 'tuesday':
+                  console.log("the day is tuesday" );
+                  break;
+                  case 'wednesday': 
+                  console.log("the day is wednesday");
+                  break;
+                  case 'thursday': 
+                  console.log("the day is thursday");
+                  break;
+                  case 'friday': 
+                  console.log("the day is friday");
+                  case 'saturday':
+                  case 'sunday':
+                  console.log("weekend");
+                  break;
+                  default:
+                  console.log("Please enter valid day")
+                  }
+                  const nlanguage =prompt('Enter the native language');
+                  switch(nlanguage){
+                  case 'chinese || mandarin': 
+                  console.log("'MOST number of native speakers!");
+                  break;
+                  case 'spanish':
+                  console.log("2nd place in number of native speakers" );
+                  break;
+                  case 'english': 
+                  console.log("'3rd place");
+                  break;
+                  case 'Hindi': 
+                  console.log("Number 4");
+                  break;
+                  case 'arabic': 
+                  console.log("'5th most spoken language");
+                 // case 'saturday':
+                  //case 'sunday':
+                  //console.log("weekend");
+                  break;
+                  default:
+                  console.log("'Great language too")
+                  }
+                 console.log({country}+"'s population is"+ (population > 33)?
+                  "above":"below"+"average");
+                  //console.log(`${country}'s population is ${population > 33 ? 'above' :'below'} average`,);
+                  function logger(){
+                    console.log('hello every one');
+                  }
+                  logger();
+                  logger();
+                  logger();
+                 // function 
+                  
+                  //arrow function
+                  const cage=yearofbirth=> 2022 - yearofbirth;
+                  const rage= cage(1997);
+                  console.log(rage);
+                  let capitalcity;
+                  function describeCountry(country,population,capitalcity){ 
+                    return `${country}has ${population} million people and its capital city is ${capitalcity}`;
+                  }
+                  const dc1=describeCountry('INDIA', 1342,'delhi');
+                 const  dc2=describeCountry('shrilanka',20,'coloumbo');
+                  const dc3=('bangladesh',25,'dhaka');
+                  console.log(dc1,dc2,dc3);
+                 // function describeCountry(country, population, capitalCity) {
+                   // return `${country} has ${population} million people and
+                    //its capital city is ${capitalCity}`;
+                   // }
+                    //const descPortugal = describeCountry('Portugal', 10,
+                    //'Lisbon');
+                    //const descGermany = describeCountry('Germany', 83,
+                    //'Berlin');
+                    //const descFinland = describeCountry('Finland', 6,
+                    //'Helsinki');
+                    //console.log(descPortugal, descGermany, descFinland);
+                    const year= [2002,1888,2022,2015];
+                    console.log(year[1]);
+                    let rep=1;
+                    while(rep<=10){
+                        console.log(`lifting weight repetation${rep}`);
+                        rep++;
+                    }
+                    let dice = Math.trunc(Math.random()*6)+ 1;
+                    while(dice!==6){
+                        console.log(`you rolled a ${dice}`);
+                        dice = Math.trunc(Math.random()*6)+ 1;
+                        if(dice==6)
+                        console.log(`you got 6 and loop is ending`);
+                    }
+                    let e = {
+                        name2: "Harry",
+                        language: "JavaScript",
+                        run: () => {
+                          alert("self run")
+                        }
+                      }
+                      console.log(e)
+                      
+                      
+                      let p = {
+                        run: () => {
+                          alert("run")
+                        }
+                      }
+                      
+                      p.__proto__ = {
+                        name: "Jackie"
+                      }
+                      
+                      e.__proto__ = p
+                      e.run()
+                      console.log(e.name)
+                </script>
+            </body>
+</html>

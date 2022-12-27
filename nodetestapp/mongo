@@ -1,0 +1,38 @@
+const{MongoClient} = require('mongodb');
+// const MongoClient = require('mongodb').MongoClient
+const url = 'mongodb://127.0.0.1:27017'
+const client = new MongoClient(url);
+
+async function getdata()
+{
+    let result=await client.connect();
+    let db =result.db('dummy');
+    let collection =db.collection('content');
+    let responce = await collection.find({}).toArray();
+    // console.log(responce);
+    return responce
+}
+async function savedata(){
+   let connection = await client.connect()
+   let db = connection.db('dummy')
+   let collection = db.collection('content')
+   let newDoc = await collection.insertOne({title:'my third post',content:'this is my third post'})
+   if(!newDoc){
+    console.log("Document not created")
+   } else{
+    console.log("Document created : ",newDoc)
+
+   }
+}
+(async ()=>{
+    console.log(await getdata());
+    //await savedata()
+})()
+
+//console.log(await getdata());
+
+//module.exports={getdata}
+
+
+
+
